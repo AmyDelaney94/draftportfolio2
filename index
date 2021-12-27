@@ -2,13 +2,31 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="resume, job seeking, experience, dublin, ireland">
+    <meta name="keywords" content="game, tictactoe, interactive, best of 3, dublin, ireland">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>X's and O's</title>
 </head>
+<!-- Body section of the HTML -->
 
+<body>
+    <!-- Header section including Nav Bar to home screen and game screen -->
+    <header>
+        <h1>X's and O's</h1>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Game</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Footer section of the site -->
+    <footer>
+
+    </footer>
+</body>
 
 </html>
