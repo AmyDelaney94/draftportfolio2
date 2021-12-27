@@ -12,6 +12,9 @@ body {
 
 }
 /* Nav Bar */
+ul > li {
+    list-style: none;
+}
 
 /* Footer */
 
