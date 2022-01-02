@@ -14,6 +14,7 @@ body {
 /* Nav Bar */
 ul > li {
     list-style: none;
+    color: black;
     letter-spacing: 2px;
     margin: 5px;
     line-height: 75px;
