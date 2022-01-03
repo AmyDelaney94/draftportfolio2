@@ -8,6 +8,9 @@
     <meta name="keywords" content="game, tictactoe, interactive, best of 3, dublin, ireland">
 
     <!-- Add Google Font and Font Awesome links here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=EB+Garamond&display=swap" rel="stylesheet">
 
 
     <link rel="stylesheet" href="assets/css/style.css">
@@ -18,14 +21,15 @@
 <body>
     <!-- Header section including Nav Bar to home screen and game screen -->
     <header>
-        <nav>
+        <nav id="selection">
             <ul>
+                <li>
+                    <a href="play.html" class="active">Game</a>
+                </li>
                 <li>
                     <a href="index.html">Home</a> 
                 </li>
-                <li>
-                    <a href="play.html">Game</a>
-                </li>
+               
             </ul>
         </nav>
     </header>
@@ -33,15 +37,35 @@
         <a href="index.html">X's and O's</a>
     </h1>
     <div class="game-zone">
-
+        <table class="game-area">
+            <tr>
+                <td> x </td>
+                <td> x</td>
+                <td> x</td>
+            </tr>
+            <tr>
+                <td> x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td>x </td>
+                <td> x</td>
+                <td>x </td>
+            </tr>
+        </table>
     </div>    
 
     <div class="score-area">
-        <p class="scores"> Games Won <span id="score">0</span></p>
+        <p class="scores"> Games Won: <span id="score">0</span></p>
     </div>
 
     <div class="timer-area">
-        <p class="timer"> Time Remaining <span id="time">60</span></p>
+        <p class="timer"> Time Remaining: <span id="time">60</span> seconds</p>
+    </div>
+    
+    <div class="reset">
+        <button data-type="submit" class="reset-button" >Reset Game</button>
     </div>
 
     <!-- Link to JavaScript file -->

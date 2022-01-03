@@ -8,6 +8,9 @@
     <meta name="keywords" content="game, tictactoe, interactive, best of 3, dublin, ireland">
 
     <!-- Add Google Font and Font Awesome links here!! -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=EB+Garamond&display=swap" rel="stylesheet">
 
 
     <link rel="stylesheet" href="assets/css/style.css">
@@ -18,21 +21,22 @@
 <body>
     <!-- Header section including Nav Bar to home screen and game screen -->
     <header>
-        <nav>
+        <nav id="selection">
             <ul>
                 <li>
-                    <a href="index.html">Home</a> 
+                    <a href="play.html">Game</a>
                 </li>
                 <li>
-                    <a href="play.html">Play</a>
+                    <a href="index.html" class="active">Home</a>
                 </li>
+               
             </ul>
         </nav>
     </header>
-    <h1 class="header" >X's and O's</h1>
+    <h1 class="heading" >X's and O's</h1>
     <!-- Button to bring user to game screen -->
     <section>
-        <button id="my-button" ><a href="play.html">Press To Play!</a></button>
+        <button id="my-button" class="active" data-type="play"><a href="play.html">Press To Play!</a></button>
     </section>
 
     <!-- Link to JavaScript file -->
