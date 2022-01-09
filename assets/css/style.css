@@ -1,3 +1,5 @@
+@import 'animate.css';
+
 
  * {
      margin: 0;
@@ -12,25 +14,35 @@ body {
 }
 
 h1 {
-    line-height: 75px;
     padding: 1rem;
     text-align: center;
-    color: #ffa500;
     font-family: 'Cairo', sans-serif;
+    font-size: 300%;
 }
 
 /* Buttons */
 
-#my-button {
-    color: #ffa500;
-    background-color: teal;
+#my-button, #rule-button, #feedback-button, #reset-button {
+    border-radius: 2px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 100%;
+    font-weight: bold;
+    background-color: #ffa500;
+    color: #3c3c3c;
+    display: block;
+    width: 33%;
     font-family: 'EB Garamond', serif;
 }
 
 /* Heading */
+
 .heading {
     text-align: center;
-    font-size: 275%;
+    font-weight: bold;
     letter-spacing: 3px;
     line-height: 150px;
     color: #ffa500;
@@ -39,10 +51,6 @@ h1 {
 .heading a {
     text-decoration: none;
     color: inherit;
-}
-
-.heading a:hover {
-    border-bottom: 1px solid black;
 }
 
 /* Game Page */
@@ -139,7 +147,7 @@ table, td {
 
 @media (max-width: 320px) {
     .game-zone {
-        height: 70vh;
+        height: 45vh;
         width: 75%;
         margin: 10px auto;
     }
@@ -151,6 +159,7 @@ table, td {
     .heading > h1 {
         font-size: 1rem;
         text-align: center;
+        font-weight: bold;
     }
 
     .feedback-form {
