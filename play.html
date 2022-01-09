@@ -19,53 +19,38 @@
 <!-- Body section of the HTML -->
 
 <body>
-    <!-- Header section including Nav Bar to home screen and game screen -->
-    <header>
-        <nav id="selection">
-            <ul>
-                <li>
-                    <a href="play.html" class="active">Game</a>
-                </li>
-                <li>
-                    <a href="index.html">Home</a> 
-                </li>
-               
-            </ul>
-        </nav>
-    </header>
+    
     <h1 class="heading">
         <a href="index.html">X's and O's</a>
     </h1>
     <div class="game-zone">
         <table class="game-area">
-            <tr>
-                <td> x </td>
-                <td> x</td>
-                <td> x</td>
-            </tr>
-            <tr>
-                <td> x</td>
-                <td>x</td>
-                <td>x</td>
-            </tr>
-            <tr>
-                <td>x </td>
-                <td> x</td>
-                <td>x </td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
         </table>
-    </div>    
+    </div>
 
     <div class="score-area">
         <p class="scores"> Games Won: <span id="score">0</span></p>
     </div>
 
-    <div class="timer-area">
-        <p class="timer"> Time Remaining: <span id="time">60</span> seconds</p>
-    </div>
-    
     <div class="reset">
-        <button data-type="submit" class="reset-button" >Reset Game</button>
+        <button data-type="submit" class="reset-button">Reset Game</button>
     </div>
 
     <!-- Link to JavaScript file -->
