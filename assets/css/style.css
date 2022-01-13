@@ -163,7 +163,19 @@ table, td {
         font-weight: bold;
     }
 
+    .playerStatus , p {
+        text-align: center;
+        padding-top: 5px;
+    }
+
     .feedback-form {
         margin: auto;
     }
 } 
+
+@media  (min-width: 800px) {
+    .feedback-form {
+        margin: 0;
+        padding: 0;
+    }
+}
