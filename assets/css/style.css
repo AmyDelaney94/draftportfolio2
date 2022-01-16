@@ -1,5 +1,8 @@
-@import 'animate.css';
+*, *::after, *::before{
+    box-sizing: border-box;
+}
 
+@import 'animate.css';
 
  * {
      margin: 0;
@@ -9,7 +12,7 @@
 
 /* Home Page */
 body {  
-    background-color: #00b3b3;
+    /* background-color: #00b3b3; */
     font-family: 'EB Garamond', serif;
 }
 
@@ -55,27 +58,91 @@ h1 {
 
 /* Game Page */
 
-.game-zone > table {
+.game-zone {
     text-align: center;
     margin: auto;
 }
 
-table, td {
-    border: solid black 1px; width: 240px;
-    height: 5rem;
-    border-collapse: collapse;
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    color: #3c3c3c;
+    width: 240px;
+    margin: 10px auto;
     cursor: pointer;
 }
 
-/* .score-area {
-
-
+.box {
+    width: 80px;
+    height: 80px;
+    box-shadow: 2px;
+    font-size: 40px;
+    line-height: 80px;
+    border: solid black 1px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
-.reset{
 
+.box:first-child, .box:nth-child(2), .box:nth-child(3) {
+    border-top: none;
+}
 
-} */
+.box:nth-child(3n + 1) {
+    border-left: none;
+}
+
+.box:nth-child(3n + 3) {
+    border-right: none;
+}
+
+.box:nth-child(7), .box:nth-child(8), .box:nth-child(9) {
+    border-bottom: none;
+}
+
+.box.x::before, .box.x::after {
+    content: '';
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.box.x::before{
+    transform:rotate(45deg);
+}
+
+.box.x::after{
+    transform:rotate(-45deg);
+}
+
+.box.o::before, .box.o::after {
+    content: '';
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* Player choice */
+.score-area, .playerStatus {
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#option1 {
+    color: white;
+}
+
+#option2 {
+ color: black;
+}
+
 
 
 /* Feedback Form Page */
